@@ -1,0 +1,119 @@
+:root {
+    --negro: #54595F;
+    --amarillo: #EFD316;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Jura', sans-serif;
+}
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+}
+
+
+nav li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.destacado {
+    font-size: 18px;
+    color: var(--amarillo);
+    font-weight: 700;
+}
+
+.destacado:hover {
+    color: white;
+}
+
+.logo img {
+    width: 120px;
+}
+
+header {
+    height: 100vh;
+    background-image: url("/img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-header {
+    right: 50px;
+    bottom: 50px;
+}
+
+.text-header h2 {
+    line-height: 80px;
+    font-size: 94px;
+    font-weight: 900;
+    color: white;
+}
+
+.text-header span {
+    font-size: 115px;
+    color: var(--amarillo);
+}
+
+.text-header button {
+    margin-right: 10px;
+}
+
+.escape-room h1 {
+    font-weight: 900;
+    color: var(--negro);
+}
+
+
+.escape-room p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.text-info h2 {
+    font-weight: 900;
+    color: var(--negro);
+    font-size: 30px;
+}
+
+
+.text-info p {
+    color: var(--negro);
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--negro);
+}
+
+.image2 {
+    width: 80px;
+    margin: 50px;
+}
+
+.image3 {
+    width: 120px;
+    margin: 60px;
+}
+
