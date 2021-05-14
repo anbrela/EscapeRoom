@@ -1,372 +1,384 @@
 :root {
-    --negro: #54595F;
-    --amarillo: #FEE440;
-    --rojo: #BA324F;
+  --negro: #54595f;
+  --amarillo: #fee440;
+  --rojo: #ba324f;
 }
 
-
-
-
-
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-    font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
-
-body, html {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    overflow-x: hidden;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 nav {
-    height: 100px;
+  height: 100px;
 }
 
-
 nav li {
-    margin: 10px;
-    list-style-type: none;
+  margin: 10px;
+  list-style-type: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--negro);
-    font-size: 15px;
-    font-weight: 400;
+  text-decoration: none;
+  color: var(--negro);
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .destacado {
-    font-size: 18px;
-    color: var(--amarillo);
-    font-weight: 700;
+  font-size: 18px;
+  color: var(--amarillo);
+  font-weight: 700;
 }
 
 .destacado:hover {
-    color: white;
+  color: white;
 }
 
 .logo img {
-    width: 120px;
+  width: 120px;
 }
 
 header {
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-    background-image: url("/img/banner.jpg");
-    background-position: center;
-    background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("/img/banner.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .text-header {
-    right: 50px;
-    bottom: 50px;
+  right: 50px;
+  bottom: 50px;
 }
 
 .text-header h2 {
-    line-height: 80px;
-    font-size: 94px;
-    font-weight: 900;
-    color: white;
+  line-height: 80px;
+  font-size: 94px;
+  font-weight: 900;
+  color: white;
 }
 
 .text-header span {
-    font-size: 115px;
-    color: var(--amarillo);
+  font-size: 115px;
+  color: var(--amarillo);
 }
 
 .text-header button {
-    margin-right: 10px;
+  margin-right: 10px;
+}
+
+.image-escape-room {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
 }
 
 .escape-room h1 {
-    font-weight: 900;
-    color: var(--negro);
+  font-weight: 900;
+  color: var(--negro);
 }
 
+.info {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+}
+
+.item-aventura {
+  height: 200px !important;
+}
+
+.item-aventura h2 {
+  font-weight: 800;
+  color: var(--negro);
+}
+
+.item-aventura p {
+  font-size: 20px;
+  font-weight: 100;
+}
 
 .escape-room p {
-    font-size: 20px;
-    font-weight: 200;
+  font-size: 20px;
+  font-weight: 200;
 }
-
-
-
 
 .text-info h2 {
-    font-weight: 900;
-    color: var(--negro);
-    font-size: 30px;
+  font-weight: 900;
+  color: var(--negro);
+  font-size: 30px;
 }
 
-
 .text-info p {
-    color: var(--negro);
-    font-weight: 200;
-    font-size: 18px;
-    color: var(--negro);
+  color: var(--negro);
+  font-weight: 200;
+  font-size: 18px;
+  color: var(--negro);
+}
+
+.image1 {
+  margin: 100px;
 }
 
 .image2 {
-    width: 80px;
-    margin: 50px;
+  width: 80px;
+  margin: 50px;
 }
 
 .image3 {
-    width: 120px;
-    margin: 60px;
+  width: 95px;
+  margin: 100px;
 }
 
+@media (max-width: 800px) {
+  .item-aventura {
+    height: 300px !important;
+  }
+
+  .image1 {
+    margin: 20px;
+  }
+
+  .image2 {
+    margin: 20px;
+  }
+
+  .image3 {
+    margin: 20px;
+  }
+}
 
 .reserva {
-    height: 100%;
-    padding-bottom: 50px;
+  height: 100%;
+  padding-bottom: 50px;
 }
 
-
 .reserva h2 {
-    font-weight: 800;
-    color: var(--negro);
+  font-weight: 800;
+  color: var(--negro);
 }
 
 .image-card {
-    max-height: 150px;
-    overflow: hidden;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .card .btn {
-    border-radius: 0px 0px 5px 5px !important;
+  border-radius: 0px 0px 5px 5px !important;
 }
-
 
 .card {
-    padding: 0 !important;
-    border-radius: 10px !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
 }
-
 
 .card .image-card img {
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
 }
 
-
 .btn-destacado {
-    background: var(--amarillo) !important;
+  background: var(--amarillo) !important;
 }
 
 .card button {
-    font-size: 12px;
-    padding: 10px;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .percentage {
-    width: 10%;
-    font-size: 14px;
+  width: 10%;
+  font-size: 14px;
 }
 
 .card a {
-    text-decoration: none;
-    color: var(--negro);
+  text-decoration: none;
+  color: var(--negro);
 }
 
 .card:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .progress-bar-custom {
-    width: 100%;
-    margin-top: -10px;
-    height: 15px;
+  width: 100%;
+  margin-top: -10px;
+  height: 15px;
 }
 
 .color-bar1 {
-    width: 90%;
-    height: 100%;
-    border: 1px solid #E2DCDE;
-    border-radius: 5px;
-    overflow: hidden;
+  width: 90%;
+  height: 100%;
+  border: 1px solid #e2dcde;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .colored-bar1 {
-    height: 100%;
-    background: var(--rojo);
-    opacity: 0.7;
-    animation: progress 2s linear 1 forwards;
+  height: 100%;
+  background: var(--rojo);
+  opacity: 0.7;
+  animation: progress 2s linear 1 forwards;
 }
-
 
 .texto-body-card {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
 .players {
-    margin-top: -10px;
-    display: flex;
-    justify-content: center;
-    color: var(--negro);
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  color: var(--negro);
 }
 
 .players i {
-    margin: 4px;
-    font-size: 23px;
-    opacity: 0.9;
+  margin: 4px;
+  font-size: 23px;
+  opacity: 0.9;
 }
 
 .duracion {
-    margin-top: -10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .duracion span {
-    color: var(--negro);
+  color: var(--negro);
 }
 
 .duracion i {
-    font-size: 30px;
-    margin: 5px;
-    color: var(--negro);
-    opacity: 0.9;
+  font-size: 30px;
+  margin: 5px;
+  color: var(--negro);
+  opacity: 0.9;
 }
 
-
 .gift {
-    height: 60vh;
+  height: 60vh;
 }
 
 .gift-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gift-image img {
-    width: 150px;
-    margin: 5px;
+  width: 150px;
+  margin: 5px;
 }
 
 .gift h2 {
-    font-weight: 900;
-    color: var(--negro);
+  font-weight: 900;
+  color: var(--negro);
 }
-
 
 .faq h2 {
-    font-weight: 900;
-    color: var(--negro);
+  font-weight: 900;
+  color: var(--negro);
 }
 
-
 #accordion button {
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--negro);
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--negro);
 }
 
 #accordion button:focus {
-    outline: none;
+  outline: none;
 }
 
 #accordion .card {
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important; 
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
 }
 
-.btn-check:focus+.btn, .btn:focus {
-    border-radius: 0px !important;
-    box-shadow: none !important;
+.btn-check:focus + .btn,
+.btn:focus {
+  border-radius: 0px !important;
+  box-shadow: none !important;
 }
 
 .card-header {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
-
 
 .dark {
-    background: var(--negro);
+  background: var(--negro);
 }
 
-
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer li {
-    list-style: none;
+  list-style: none;
 }
 
 .card-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
 .loading-spin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    font-size: 50px;
-    color: var(--rojo);
-    animation: spin 1.5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 50px;
+  color: var(--rojo);
+  animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
-    
+  100% {
+    transform: rotate(-360deg);
+  }
 }
-
 
 @keyframes progress {
+  0% {
+    width: 0%;
+  }
 
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-    
+  100% {
+    width: 90%;
+  }
 }
-
-
-
-
-
 
 @media (max-width: 800px) {
-    .columna {
-        display: flex;
-        flex-direction: column !important;
+  .columna {
+    display: flex;
+    flex-direction: column !important;
+  }
 
-    }
-
-    .columna2 {
-        display: flex;
-        flex-direction: column-reverse !important;
-
-    }
+  .columna2 {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
 }
-
