@@ -1,137 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape Room Lugo - Hype Escape Room</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/2018c2b463.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-</head>
-<body>
-
-    <header class="position-relative">
-
-        <nav class="d-flex width-100 justify-content-md-around align-items-center ">
-
-            <div class="bg-light-gray d-flex align-items-center justify-content-center logo">
-                <img src="/img/logo.png" alt="">
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center md-margin-20px">
-
-                <li> <a href="" class="text-white">Contacto</a> </li>
-                <li> <a href="" class="text-uppercase destacado">Reservar</a> </li>
-                <li> <a href="" class="text-white">Inicio</a> </li>
-
-
-
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center">
-                <li> <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a> </li>
-                <li> <a href="" class="text-white"><i class="fab fa-tripadvisor"></i></a> </li>
-                <li> <a href="" class="text-white"><i class="fab fa-instagram"></i></a> </li>
-            </div>
-
-        </nav>
-
-
-        <div class="position-absolute text-header d-flex flex-sm-column align-items-sm-end">
-            <h2 class="text-uppercase">Descubre <br> <span>Jumanji</span> </h2>
-            <button class="btn btn-light btn-lg">Reservar</button>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/2018c2b463.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="position-relative w-100">
+      <nav
+        class="d-flex width-100 justify-content-md-around align-items-center"
+      >
+        <div
+          class="
+            bg-light-gray
+            d-flex
+            align-items-center
+            justify-content-center
+            logo
+          "
+        >
+          <img src="/img/logo.png" alt="" />
         </div>
 
+        <div
+          class="
+            d-flex
+            align-items-center
+            justify-content-center
+            md-margin-20px
+          "
+        >
+          <li><a href="#" class="text-white">Inicio</a></li>
+          <li><a href="#reservar" class="text-uppercase destacado">Reservar</a></li>
+          <li><a href="contact.html" class="text-white">Contacto</a></li>
+        </div>
 
+        <div class="d-flex align-items-center justify-content-center">
+          <li>
+            <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="" class="text-white"><i class="fab fa-tripadvisor"></i></a>
+          </li>
+          <li>
+            <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+          </li>
+        </div>
+      </nav>
+
+      <div
+        class="
+          position-absolute
+          text-header
+          d-flex
+          flex-sm-column
+          align-items-sm-end
+        "
+      >
+        <h2 class="text-uppercase">
+          Descubre <br />
+          <span>Jumanji</span>
+        </h2>
+        <button class="btn btn-light btn-lg">Reservar</button>
+      </div>
     </header>
 
-
-
     <section class="container-sm escape-room">
-
-        <div></div>
-
-        <div class="row justify-content-center m-5">
-
-            <div class="col-8 d-flex flex-sm-column align-items-center justify-content-center m-5 ">
-
-                <h1 class="text-uppercase">Hype Escape Room Lugo</h1>
-                <p class="text-justify p-3">Hype es el primer escape room de Lugo. ¿Qué es un Escape Room? Imagina que tú mismo y el grupo de amigos que elijas estáis encerrados en una habitación decorada de forma extraña. En principio no parece haber salida, pero tendréis que investigar para ir encontrando pistas que os permitan salir. Si en aproximadamente 60 minutos no habéis dado con todas las pistas y resuelto el enigma habréis perdido.</p>
-
-            </div>
-
+      <div class="row justify-content-center m-5">
+        <div class="col-8">
+          <h1 class="text-uppercase text-center">Hype Escape Room Lugo</h1>
+          <p class="text-justify p-3">
+            Hype es el primer escape room de Lugo. ¿Qué es un Escape Room?
+            Imagina que tú mismo y el grupo de amigos que elijas estáis
+            encerrados en una habitación decorada de forma extraña. En principio
+            no parece haber salida, pero tendréis que investigar para ir
+            encontrando pistas que os permitan salir. Si en aproximadamente 60
+            minutos no habéis dado con todas las pistas y resuelto el enigma
+            habréis perdido.
+          </p>
         </div>
-
-
+      </div>
     </section>
-
 
     <section class="container-fluid bg-light info">
-        
-
-        <div class="container">
-
-        <div class="row info-row justify-content-md-start">
-            <div class="col-6">
-                <div class=" d-flex align-items-center justify-content-center m-3">
-
-                    <img src="/img/1.png" alt="">
-                    <div class="text-info d-flex flex-sm-column justify-content-center">
-                        <h2 class="text-uppercase">La aventura.</h2>
-                        <p class="text-justify">Nuestras aventuras no consisten en escapar de la habitación, si no de completar una misión antes de 60 minutos. Nunca te sentirás encerrado. </p>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="row justify-content-md-start">
+          <div class="col-sm-6">
+            <div
+              class="columna d-flex align-items-center justify-content-center"
+            >
+              <img src="/img/1.png" alt="" />
+              <div
+                class="
+                  text-info
+                  columna
+                  d-flex
+                  flex-sm-column
+                  justify-content-center
+                "
+              >
+                <h2 class="text-uppercase">La aventura.</h2>
+                <p class="text-justify">
+                  Nuestras aventuras no consisten en escapar de la habitación,
+                  si no de completar una misión antes de 60 minutos. Nunca te
+                  sentirás encerrado.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
 
-
-        <div class="row info-row justify-content-md-end">
-
-            <div class="col-5">
-                <div class=" d-flex align-items-center justify-content-center">
-
-                    <div class="text-info d-flex flex-sm-column justify-content-center">
-                        <h2 class="text-uppercase">La aventura.</h2>
-                        <p class="text-justify">Nuestras aventuras no consisten en escapar de la habitación, si no de completar una misión antes de 60 minutos. Nunca te sentirás encerrado. </p>
-                    </div>
-                    <img class="image2" src="/img/2.png" alt="">
-
-
-                </div>
+        <div class="row justify-content-md-end">
+          <div class="col-sm-6">
+            <div
+              class="d-flex columna2 align-items-center justify-content-center"
+            >
+              <div
+                class="
+                  text-info
+                  columna
+                  d-flex
+                  flex-sm-column
+                  justify-content-center
+                "
+              >
+                <h2 class="text-uppercase">El Ingenio.</h2>
+                <p class="text-justify">
+                  En Hype Escape Room pondrás a prueba tu ingenio, observación y
+                  sobre todo, el trabajo en equipo. ¿Quieres ponerte a prueba?
+                </p>
+              </div>
+              <img class="image2" src="/img/2.png" alt="" />
             </div>
+          </div>
         </div>
 
-
-
-        <div class="row info-row justify-content-md-start">
-            <div class="col-6">
-                <div class=" d-flex align-items-center justify-content-center m-3">
-
-                    <img class="image3" src="/img/3.png" alt="">
-                    <div class="text-info d-flex flex-sm-column justify-content-center">
-                        <h2 class="text-uppercase">La aventura.</h2>
-                        <p class="text-justify">Nuestras aventuras no consisten en escapar de la habitación, si no de completar una misión antes de 60 minutos. Nunca te sentirás encerrado. </p>
-                    </div>
-
-                </div>
+        <div class="row justify-content-md-start">
+          <div class="col-sm-6">
+            <div
+              class="d-flex columna align-items-center justify-content-center"
+            >
+              <img class="image3" src="/img/3.png" alt="" />
+              <div
+                class="
+                  text-info
+                  columna
+                  d-flex
+                  flex-sm-column
+                  justify-content-center
+                "
+              >
+                <h2 class="text-uppercase">Plan diferente.</h2>
+                <p class="text-justify">
+                  Si no tienes plan y quieres buscar una alternativa diferente
+                  ven a divertirte con nosotros y créeme, ¡repetirás! 🕵
+                  
+                </p>
+              </div>
             </div>
+            <span id="reservar"></span>
+          </div>
         </div>
-
-    </div>
-
-
+      </div>
     </section>
 
+    <section class="container-sm-6 reserva "">
+      <div class="row justify-content-center m-5">
+        <div class="col-sm-6">
+          <h2 class="text-uppercase h1 text-center">Nuestras salas:</h2>
+        </div>
+      </div>
 
-    
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+      <div class="row justify-content-center mt-5">
+        <div class="card m-3" style="width: 18rem">
+          <div class="image-card">
+            <img src="img/jumanji.webp" alt="..." />
+          </div>
+          <div class="card-body flex-sm-column align-items-center">
+            <p class="card-text text-justify">
+              No comiences a jugar a menos que tengas la intención de terminar».
+              Alan Parrish os necesita para acabar el juego que empezó hace 27
+              años. El juego de Jumanji os espera.
+            </p>
+            <p class="text-uppercase text-center texto-body-card">Dificultad</p>
+            <div class="progress-bar-custom d-flex align-items-center">
+              <div class="color-bar1">
+                <div class="colored-bar1"></div>
+              </div>
+              <div class="percentage m-2">
+                <span id="percent"> 4/5</span>
+              </div>
+            </div>
 
-</body>
+            <p class="text-uppercase text-center texto-body-card mt-3">
+              jugadores
+            </p>
+            <div class="players">
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+            </div>
+
+            <p class="text-uppercase text-center texto-body-card mt-3">
+              Duración
+            </p>
+            <div class="duracion">
+              <i class="far fa-clock"></i>
+              <span>60'</span>
+            </div>
+          </div>
+          <button class="btn align-items-center btn-destacado text-uppercase">
+            <a href="jumanji.html">Reservar</a>
+          </button>
+        </div>
+
+        <div class="card m-3" style="width: 18rem">
+          <div class="image-card">
+            <img src="img/simpsons.jpg" alt="..." />
+          </div>
+          <div class="card-body flex-sm-column align-items-center">
+            <p class="card-text text-justify">
+              El pueblo de Springfield está sumido en el caos, una fuga en la
+              central nuclear ha obligado a la EPA a evacuar la totalidad de los
+              habitantes pero hay un problema.
+            </p>
+            <p class="text-uppercase text-center texto-body-card">Dificultad</p>
+            <div class="progress-bar-custom d-flex align-items-center">
+              <div class="color-bar1">
+                <div class="colored-bar1"></div>
+              </div>
+              <div class="percentage m-2">
+                <span id="percent"> 4/5</span>
+              </div>
+            </div>
+
+            <p class="text-uppercase text-center texto-body-card mt-3">
+              jugadores
+            </p>
+            <div class="players">
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+              <i class="fas fa-male"></i>
+              <i class="fas fa-female"></i>
+            </div>
+
+            <p class="text-uppercase text-center texto-body-card mt-3">
+              Duración
+            </p>
+            <div class="duracion">
+              <i class="far fa-clock"></i>
+              <span>60'</span>
+            </div>
+          </div>
+          <button class="btn align-items-center btn-destacado text-uppercase">
+            <a href="simpsons.html">Reservar</a>
+          </button>
+        </div>
+
+        <div class="card m-3" style="width: 18rem">
+          <div class="image-card">
+            <img src="img/jumanji.webp" alt="..." />
+          </div>
+          <div class="card-body flex-sm-column align-items-center">
+            <p class="card-text text-justify">
+             Nueva aventura en construcción...
+            </p>
+            
+        <div class="loading-spin">
+
+            <i class="fas fa-spinner"></i>
+
+        </div>
+
+           
+          </div>
+          <button class="btn align-items-center btn-dark text-uppercase">
+            <a class="text-white" href="#">Próximamente</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift bg-light">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row justify-content-center align-items-center p-3">
+          <div class="col-sm-6">
+            <h2 class="h2 text-uppercase">Un regalo diferente.</h2>
+            <p class="text-justify">
+              El plan de ocio que esta triunfando en todo el mundo. ¿Aún no has
+              jugado? Te encerramos en una habitación con tu pareja, amigos o
+              familia y tendréis que conseguir escapar en menos de 60 minutos.
+              ¿Te parece un regalo original? En nuestras aventuras tendrás que
+              ponerte a prueba con multitud de pruebas de lógica, habilidad,
+              deducción si quieres conseguir el objetivo que se plantea en cada
+              sala. Si has llegado aquí buscando un regalo diferente, Hype
+              Escape Room, abre sus puertas para ti y tus seres queridos!
+            </p>
+          </div>
+          <div class="col-sm-6 gift-image">
+            <img src="/img/gift.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq p-4">
+      <div
+        class="container h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="row">
+          <h2 class="h2 text-uppercase text-end p-3">Preguntas Frecuentes</h2>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    ¿Pueden jugar niños?
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show p-3"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                  beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard of them accusamus labore sustainable
+                  VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    ¿Podríamos ser 7?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                  beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard of them accusamus labore sustainable
+                  VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    ¿Puedo cancelar la reserva?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                  beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard of them accusamus labore sustainable
+                  VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    ¿Puedo sentir miedo?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                  beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard of them accusamus labore sustainable
+                  VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-lg-start dark">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row dark">
+          <!--Grid column-->
+          <div
+            class="
+              col-lg-6 col-md-12
+              mb-4 mb-md-0
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <img style="width: 150px" src="img/logo.png" alt="" />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div
+            class="
+              col-lg-6 col-md-12
+              mb-4 mb-md-0
+              d-flex
+              flex-sm-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <li><a class="text-white" href="">Condiciones de Reserva</a></li>
+            <li><a class="text-white" href="">Política de privacidad</a></li>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 dark text-white">
+        © 2021 Copyright
+        <a class="text-white" href="https://www.pablonaveira.dev"
+          >Hype Escape Room</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      id="js-turitop"
+      src="https://app.turitop.com/js/load-turitop.min.js"
+      data-company="H274"
+      data-ga="no"
+      data-buttoncolor="green"
+      data-afftag="ttafid"
+    ></script>
+  </body>
 </html>
