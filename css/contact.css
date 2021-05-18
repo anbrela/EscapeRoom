@@ -1,0 +1,63 @@
+header {
+  width: 100vw;
+  overflow: hidden;
+  height: 30vh;
+  background-image: url("/img/contacto.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+header nav {
+  z-index: 999;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Jura", sans-serif;
+}
+
+nav li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--amarillo) !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.text-header-jum {
+  bottom: -10px !important;
+  left: calc(50% - 140px);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.text-header-jum h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--negro);
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+form button {
+  background: var(--amarillo) !important;
+  border: 0.5px solid var(--negro) !important;
+}
+
+.contacto {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-text h2 {
+  font-weight: 400;
+  font-size: 40px;
+}

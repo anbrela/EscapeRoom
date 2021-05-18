@@ -37,6 +37,10 @@ nav a {
   font-weight: 400;
 }
 
+.ham {
+  display: none;
+}
+
 .destacado {
   font-size: 18px;
   color: var(--amarillo);
@@ -115,6 +119,57 @@ header {
 .escape-room p {
   font-size: 20px;
   font-weight: 200;
+}
+
+.enlaces-responsive {
+  display: none;
+}
+
+.enlaces-responsive.active {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all 1s ease-in-out;
+}
+
+.enlaces-responsive svg {
+  position: absolute;
+  bottom: -200px;
+  z-index: 999;
+}
+
+.enlaces-responsive i {
+  position: absolute;
+  top: 24px;
+  right: 34px;
+  color: var(--negro);
+  font-size: 30px;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  font-size: 23px;
+  color: var(--negro) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links li {
+  list-style: none;
 }
 
 .text-info h2 {
@@ -380,5 +435,106 @@ footer li {
   .columna2 {
     display: flex;
     flex-direction: column-reverse !important;
+  }
+
+  .escape-room {
+    padding: 0 !important;
+  }
+
+  .escape-room span {
+    font-size: 10px !important;
+  }
+
+  .escape-room h1 {
+    font-size: 30px;
+  }
+
+  .escape-room p {
+    font-size: 15px;
+  }
+
+  .image-escape-room {
+    bottom: 0;
+  }
+
+  .image-escape-room img {
+    width: 50px !important;
+  }
+
+  .item-aventura h2 {
+    font-size: 20px;
+  }
+
+  .item-aventura p {
+    font-size: 15px;
+  }
+
+  .info {
+    padding-bottom: 0px;
+  }
+
+  .reserva {
+    padding-bottom: 150px;
+  }
+
+  .gift h2 {
+    text-align: center;
+  }
+
+  .faq h2 {
+    text-align: center !important;
+  }
+
+  .card-body {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-header {
+    min-width: 100vw;
+    align-items: flex-end;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+  }
+
+  .text-header h2 {
+    font-size: 55px;
+  }
+
+  .text-header span {
+    font-size: 65px;
+  }
+
+  .text-header button {
+    width: 120px;
+    height: 50px;
+  }
+
+  #enlaces {
+    display: none !important;
+  }
+
+  #social {
+    display: none !important;
+  }
+
+  .ham {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .linea1,
+  .linea2 {
+    margin: 3px;
+    width: 30px;
+    height: 3px;
+    background: white;
+  }
+
+  .linea1 {
+    width: 35px;
   }
 }

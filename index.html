@@ -28,10 +28,36 @@
     />
   </head>
   <body>
-    <header class="position-relative w-100">
-      <nav
-        class="d-flex width-100 justify-content-md-around align-items-center"
+    <div id="enlaces-responsive" class="enlaces-responsive">
+      <svg
+        height="100%"
+        width="100%"
+        id="svg"
+        viewBox="0 0 1440 600"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
       >
+        <path
+          d="M 0,600 C 0,600 0,300 0,300 C 124.93333333333334,243.06666666666666 249.86666666666667,186.13333333333335 394,218 C 538.1333333333333,249.86666666666665 701.4666666666667,370.53333333333336 879,399 C 1056.5333333333333,427.46666666666664 1248.2666666666667,363.73333333333335 1440,300 C 1440,300 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#ffffffff"
+          class="transition-all duration-300 ease-in-out delay-150"
+          transform="rotate(-180 720 300)"
+        ></path>
+      </svg>
+      <div class="links">
+        <li><a href="#" class="text-white">Inicio</a></li>
+        <li>
+          <a href="#reservar" class="text-uppercase destacado">Reservar</a>
+        </li>
+        <li><a href="contact.html" class="text-white">Contacto</a></li>
+        <i id="close" class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <header class="position-relative w-100">
+      <nav class="d-flex width-100 justify-content-around align-items-center">
         <div
           class="
             bg-light-gray
@@ -44,7 +70,13 @@
           <img src="/img/logo.png" alt="" />
         </div>
 
+        <div id="ham" class="ham">
+          <div class="linea1"></div>
+          <div class="linea2"></div>
+        </div>
+
         <div
+          id="enlaces"
           class="
             d-flex
             align-items-center
@@ -53,11 +85,16 @@
           "
         >
           <li><a href="#" class="text-white">Inicio</a></li>
-          <li><a href="#reservar" class="text-uppercase destacado">Reservar</a></li>
-          <li><a href="contact.html" class="text-white">Contacto</a></li>
+          <li>
+            <a href="#reservar" class="text-uppercase destacado">Reservar</a>
+          </li>
+          <li><a href="contacto.html" class="text-white">Contacto</a></li>
         </div>
 
-        <div class="d-flex align-items-center justify-content-center">
+        <div
+          id="social"
+          class="social d-flex align-items-center justify-content-center"
+        >
           <li>
             <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a>
           </li>
@@ -75,7 +112,7 @@
           position-absolute
           text-header
           d-flex
-          flex-sm-column
+          flex-column
           align-items-sm-end
         "
       >
@@ -87,66 +124,58 @@
       </div>
     </header>
 
-
-    <section class="escape-room position-relative p-5">
-
+    <section class="escape-room position-relative p-sm-5">
       <div class="image-escape-room">
-        <img style="width: 300px;" src="img/background.svg" alt="">
+        <img style="width: 300px" src="img/background.svg" alt="" />
       </div>
 
       <div class="container">
-      <div class="row d-flex justify-content-center m-5">
-        <div class="col-7 p-2">
-          <span class="text-uppercase mb-4">El primer escape room de Lugo</span>
-          <h1 class="text-uppercase display-4">Hype Escape Room Lugo</h1>
-          <p class="text-justify">
-            Hype es el primer escape room de Lugo. ¿Qué es un Escape Room?
-            Imagina que tú mismo y el grupo de amigos que elijas estáis
-            encerrados en una habitación decorada de forma extraña. En principio
-            no parece haber salida, pero tendréis que investigar para ir
-            encontrando pistas que os permitan salir. Si en aproximadamente 60
-            minutos no habéis dado con todas las pistas y resuelto el enigma
-            habréis perdido.
-          </p>
+        <div class="row d-flex justify-content-center m-5">
+          <div class="col-sm-7 p-2">
+            <span class="text-uppercase mb-4"
+              >El primer escape room de Lugo</span
+            >
+            <h1 class="text-uppercase display-4">Hype Escape Room Lugo</h1>
+            <p class="text-justify">
+              Hype es el primer escape room de Lugo. ¿Qué es un Escape Room?
+              Imagina que tú mismo y el grupo de amigos que elijas estáis
+              encerrados en una habitación decorada de forma extraña. En
+              principio no parece haber salida, pero tendréis que investigar
+              para ir encontrando pistas que os permitan salir. Si en
+              aproximadamente 60 minutos no habéis dado con todas las pistas y
+              resuelto el enigma habréis perdido.
+            </p>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
-
     <section class="bg-light info">
       <div class="container">
-
-
         <div class="row item-aventura justify-content-md-start">
           <div class="col-sm-6 break-item d-flex align-items-center">
-           
-              <img class="image1" src="/img/1.png" alt="" />
-              <div
-                class="col">
-                <h2 class="text-uppercase">La aventura.</h2>
-                <p class="text-justify">
-                  Nuestras aventuras no consisten en escapar de la habitación,
-                  si no de completar una misión antes de 60 minutos. Nunca te
-                  sentirás encerrado.
-                </p>
-              </div>
+            <img class="image1" src="/img/1.png" alt="" />
+            <div class="col">
+              <h2 class="text-uppercase">La aventura.</h2>
+              <p class="text-justify">
+                Nuestras aventuras no consisten en escapar de la habitación, si
+                no de completar una misión antes de 60 minutos. Nunca te
+                sentirás encerrado.
+              </p>
+            </div>
           </div>
         </div>
 
         <div class="row item-aventura justify-content-md-end">
           <div class="col-sm-5 d-flex align-items-center">
-           
-              <div
-                class="col">
-                <h2 class="text-uppercase">El Ingenio.</h2>
-                <p class="text-justify">
-                  En Hype Escape Room pondrás a prueba tu ingenio, observación y
-                  sobre todo, el trabajo en equipo. ¿Quieres ponerte a prueba?
-                </p>
-              </div>
-              <img class="image2" src="/img/2.png" alt="" />
-          
+            <div class="col">
+              <h2 class="text-uppercase">El Ingenio.</h2>
+              <p class="text-justify">
+                En Hype Escape Room pondrás a prueba tu ingenio, observación y
+                sobre todo, el trabajo en equipo. ¿Quieres ponerte a prueba?
+              </p>
+            </div>
+            <img class="image2" src="/img/2.png" alt="" />
           </div>
         </div>
 
@@ -154,27 +183,20 @@
           <div class="col-sm-6 d-flex align-items-center">
             <img class="image3" src="/img/3.png" alt="" />
             <div class="col">
-                <h2 class="text-uppercase">Plan diferente.</h2>
-                <p class="text-justify">
-                  Si no tienes plan y quieres buscar una alternativa diferente
-                  ven a divertirte con nosotros y créeme, ¡repetirás! 🕵
-                  
-                </p>
-              </div>
+              <h2 class="text-uppercase">Plan diferente.</h2>
+              <p class="text-justify">
+                Si no tienes plan y quieres buscar una alternativa diferente ven
+                a divertirte con nosotros y créeme, ¡repetirás! 🕵
+              </p>
+            </div>
           </div>
         </div>
 
         <span id="reservar"></span>
-
-        
       </div>
     </section>
 
-   
-
-    
-
-    <section class="container-sm-6 reserva "">
+    <section class="container-sm-6 reserva">
       <div class="row justify-content-center m-5">
         <div class="col-sm-6">
           <h2 class="text-uppercase h1 text-center">Nuestras salas:</h2>
@@ -278,16 +300,12 @@
           </div>
           <div class="card-body flex-sm-column align-items-center">
             <p class="card-text text-justify">
-             Nueva aventura en construcción...
+              Nueva aventura en construcción...
             </p>
-            
-        <div class="loading-spin">
 
-            <i class="fas fa-spinner"></i>
-
-        </div>
-
-           
+            <div class="loading-spin">
+              <i class="fas fa-spinner"></i>
+            </div>
           </div>
           <button class="btn align-items-center btn-dark text-uppercase">
             <a class="text-white" href="#">Próximamente</a>
@@ -296,7 +314,7 @@
       </div>
     </section>
 
-    <section class="gift bg-light">
+    <section class="gift h-100 bg-light">
       <div class="container h-100 d-flex align-items-center">
         <div class="row justify-content-center align-items-center p-3">
           <div class="col-sm-6">
@@ -348,17 +366,17 @@
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  Los niños pueden jugar aunque las experiencias no están
+                  diseñadas para menores de 11 años. En nuestras salas estamos
+                  acostumbrados a recibir a familias que vienen a jugar con
+                  niños menores de esa edad es por eso que recomendamos que la
+                  experiencia se realice con más de un adulto en el juego así
+                  disfrutarán todos por igual. Si no quieres venir a jugar con
+                  ellos, los niños deberán ser todos mayores de 11 años.
+                  <strong
+                    >Recomendamos la experiencia para familias que juegan dos
+                    adultos y uno o dos niños</strong
+                  >
                 </div>
               </div>
             </div>
@@ -383,17 +401,14 @@
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  Nuestras aventuras están diseñadas para 4 personas. Si tenéis
+                  pensado ser más de 4, la experiencia será peor, por no hablar
+                  de ser más de 6, es un caos completo y los espacios no están
+                  concebidos para tanta gente.
+                  <strong
+                    >Nunca permitimos la entrada de más de 6 personas porque
+                    primamos la calidad del juego antes que el dinero</strong
+                  >
                 </div>
               </div>
             </div>
@@ -418,17 +433,10 @@
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  La reserva puede cancelarse hasta 24h antes, por lo general
+                  somos bastante laxos con el tema siempre que no sea el mismo
+                  día. Si necesitas ayuda con el tema ponte en contacto con
+                  nostros <a href="contacto.html">aquí</a>
                 </div>
               </div>
             </div>
@@ -454,17 +462,8 @@
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  En nuestras aventuras no sentirás ningún tipo de miedo,
+                  claustrofobia ni agobio de ningún tipo!
                 </div>
               </div>
             </div>
@@ -521,6 +520,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+
+    <script src="js/main.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

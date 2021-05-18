@@ -27,12 +27,39 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="position-relative w-100">
-      <nav
-        class="d-flex width-100 justify-content-md-around align-items-center"
+    <div id="enlaces-responsive" class="enlaces-responsive">
+      <svg
+        height="100%"
+        width="100%"
+        id="svg"
+        viewBox="0 0 1440 600"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
       >
+        <path
+          d="M 0,600 C 0,600 0,300 0,300 C 124.93333333333334,243.06666666666666 249.86666666666667,186.13333333333335 394,218 C 538.1333333333333,249.86666666666665 701.4666666666667,370.53333333333336 879,399 C 1056.5333333333333,427.46666666666664 1248.2666666666667,363.73333333333335 1440,300 C 1440,300 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#ffffffff"
+          class="transition-all duration-300 ease-in-out delay-150"
+          transform="rotate(-180 720 300)"
+        ></path>
+      </svg>
+      <div class="links">
+        <li><a href="#" class="text-white">Inicio</a></li>
+        <li>
+          <a href="#reservar" class="text-uppercase destacado">Reservar</a>
+        </li>
+        <li><a href="contact.html" class="text-white">Contacto</a></li>
+        <i id="close" class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <header class="position-relative w-100">
+      <nav class="d-flex width-100 justify-content-around align-items-center">
         <div
           class="
             bg-light-gray
@@ -45,7 +72,13 @@
           <img src="/img/logo.png" alt="" />
         </div>
 
+        <div id="ham" class="ham">
+          <div class="linea1"></div>
+          <div class="linea2"></div>
+        </div>
+
         <div
+          id="enlaces"
           class="
             d-flex
             align-items-center
@@ -53,14 +86,17 @@
             md-margin-20px
           "
         >
-          <li><a href="index.html" class="text-white">Inicio</a></li>
-
-          <li><a href="index.html" class="text-uppercase destacado">Reservar</a></li>
-
-          <li><a href="contacto.html" class="text-white">Contacto</a></li>
+          <li><a href="#" class="text-white">Inicio</a></li>
+          <li>
+            <a href="#reservar" class="text-uppercase destacado">Reservar</a>
+          </li>
+          <li><a href="contact.html" class="text-white">Contacto</a></li>
         </div>
 
-        <div class="d-flex align-items-center justify-content-center">
+        <div
+          id="social"
+          class="social d-flex align-items-center justify-content-center"
+        >
           <li>
             <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a>
           </li>
@@ -120,7 +156,7 @@
                   class="
                     col
                     d-flex
-                    flex-sm-column
+                    flex-column
                     align-items-center
                     justify-content-center
                   "
@@ -137,7 +173,7 @@
                   class="
                     col
                     d-flex
-                    flex-sm-column
+                    flex-column
                     align-items-center
                     justify-content-center
                   "
@@ -154,7 +190,7 @@
                   class="
                     col
                     d-flex
-                    flex-sm-column
+                    flex-column
                     align-items-center
                     justify-content-center
                   "
@@ -287,7 +323,7 @@
       </div>
     </section>
 
-    <section class="rules bg-light p-5">
+    <section class="rules bg-light p-sm-5">
       <div class="container">
         <div class="row">
           <h2 class="text-center text-uppercase">Normas antes de reservar:</h2>
@@ -357,7 +393,7 @@
     </section>
 
     <section
-      class="calendario p-5 d-flex align-items-center justify-content-center"
+      class="calendario p-sm-5 d-flex align-items-center justify-content-center"
     >
       <div class="container">
         <div class="row">
@@ -366,7 +402,7 @@
 
         <div class="row">
           <div
-            class="load-turitop p-4"
+            class="load-turitop p-sm-4"
             data-service="C1"
             data-lang="es"
             data-embed="box"
@@ -423,6 +459,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+
+    <script src="js/main.js"></script>
 
     <script
       id="js-turitop"
