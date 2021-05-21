@@ -61,3 +61,8 @@ form button {
   font-weight: 400;
   font-size: 40px;
 }
+
+.icono-whats i {
+  font-size: 50px;
+  color: var(--negro);
+}
