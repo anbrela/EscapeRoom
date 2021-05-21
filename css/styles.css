@@ -125,6 +125,15 @@ header {
   display: none;
 }
 
+.enlaces-responsive li {
+  cursor: pointer;
+  z-index: 999;
+}
+
+#close {
+  cursor: pointer;
+}
+
 .enlaces-responsive.active {
   position: absolute;
   width: 100%;
@@ -524,6 +533,7 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    cursor: pointer;
   }
 
   .linea1,
