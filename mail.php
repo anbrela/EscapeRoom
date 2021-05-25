@@ -14,7 +14,7 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 	Mensaje:  $_POST[message]";
 
     if ($_POST['email'] && !preg_match("/[\r\n]/", $_POST['email'])) {
-         $headers = "From: $_POST[email]";
+         $headers = "From: hola@escapismolugo.com";
     } else {
         $headers = "From: $youremail";
     }
