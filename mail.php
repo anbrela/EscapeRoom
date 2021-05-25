@@ -165,8 +165,104 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
 
 <section>
-    <h2>GRACIAS POR CONTACTAR</h2>
+    <div class="container">
+
+    <div class="row">
+
+    <div class="col-sm-7" ></div>
+    <h2 class="text-uppercase">Gracias por contactar</h2>
+
+    </div>
+
+    <div class="row">
+    <div class="col-sm-7">
+    <p>En breves nos pondremos en contacto contigo. Puedes hacer una reserva a través de la página.</p>
+
+    </div>
+    </div>
+
+    </div>
 </section>
+
+<footer class="text-center text-lg-start dark">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row dark">
+          <!--Grid column-->
+          <div
+            class="
+              col-lg-6 col-md-12
+              mb-4 mb-md-0
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <img style="width: 150px" src="img/logo.png" alt="" />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div
+            class="
+              col-lg-6 col-md-12
+              mb-4 mb-md-0
+              d-flex
+              flex-sm-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <li><a class="text-white" href="">Condiciones de Reserva</a></li>
+            <li><a class="text-white" href="">Política de privacidad</a></li>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 dark text-white">
+        © 2021 Copyright
+        <a class="text-white" href="https://www.pablonaveira.dev"
+          >Hype Escape Room</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      id="js-turitop"
+      src="https://app.turitop.com/js/load-turitop.min.js"
+      data-company="H274"
+      data-ga="no"
+      data-buttoncolor="green"
+      data-afftag="ttafid"
+    ></script>
 
 </body>
 
