@@ -169,14 +169,21 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
     <div class="row">
 
-    <div class="col-sm-7" ></div>
+    <div class="col-sm-7 d-flex justify-content-center" ></div>
     <h2 class="text-uppercase">Gracias por contactar</h2>
 
     </div>
 
-    <div class="row">
+    <div class="row d-flex justify-content-center">
     <div class="col-sm-7">
     <p>En breves nos pondremos en contacto contigo. Puedes hacer una reserva a través de la página.</p>
+
+    </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+    <div class="col-sm-7">
+   <img src="img/thank-you.jpg" alt="">
 
     </div>
     </div>
