@@ -182,7 +182,7 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
     </div>
 
     <div class="row d-flex justify-content-center">
-    <div class="col">
+    <div class="col d-flex justify-content-center">
    <img style="width: 80%" src="img/thank-you.jpg" alt="">
 
     </div>
