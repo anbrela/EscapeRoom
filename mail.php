@@ -20,6 +20,7 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
     }
 
     mail($youremail, 'Mensaje desde la web', $body, $headers);
+    echo ("mensaje enviado");
 
 }
 
