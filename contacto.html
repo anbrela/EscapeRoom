@@ -49,9 +49,9 @@
         ></path>
       </svg>
       <div class="links">
-        <li><a href="#" class="text-white">Inicio</a></li>
+        <li><a href="/" class="text-white">Inicio</a></li>
         <li>
-          <a href="#reservar" class="text-uppercase destacado">Reservar</a>
+          <a href="/#reservar" class="text-uppercase destacado">Reservar</a>
         </li>
         <li><a href="contact.html" class="text-white">Contacto</a></li>
         <i id="close" class="fas fa-times"></i>
@@ -131,15 +131,15 @@
           <div class="col d-flex justify-content-center icono-whats">
             <a
               href="https://api.whatsapp.com/send?phone=+34636948129&text=Hola%21%20Quiero%20m%C3%A1s%20informaci%C3%B3n."
+              ><i class="fab fa-whatsapp-square"></i
             ></a>
-            <i class="fab fa-whatsapp-square"></i>
           </div>
         </div>
       </div>
     </div>
 
     <section class="container-fluid contacto">
-      <form class="container p-5">
+      <form class="container p-5" method="post" action="mail.php">
         <div class="contact-text m-2">
           <h2>Habla con nosotros.</h2>
           <p>
@@ -148,7 +148,7 @@
             cada sala.
           </p>
         </div>
-
+        <input name="url" />
         <div class="form-group">
           <input
             type="text"
@@ -161,14 +161,15 @@
           <input
             type="email"
             class="form-control m-2"
-            id="exampleInputEmail1"
+            id="email"
             for="email"
             aria-describedby="emailHelp"
             placeholder="Introduce tu email"
           />
           <textarea
             class="form-control m-2"
-            id="exampleFormControlTextarea1"
+            for="message"
+            id="message"
             rows="3"
             placeholder="Déjanos tu mensaje"
           ></textarea>

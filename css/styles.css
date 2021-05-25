@@ -41,6 +41,11 @@ nav a {
   display: none;
 }
 
+header a {
+  text-decoration: none;
+  color: var(--negro);
+}
+
 .destacado {
   font-size: 18px;
   color: var(--amarillo);
@@ -149,7 +154,7 @@ header {
 
 .enlaces-responsive svg {
   position: absolute;
-  bottom: -200px;
+  bottom: -230px;
   z-index: 999;
 }
 
