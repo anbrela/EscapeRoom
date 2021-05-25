@@ -3,6 +3,6 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
-Redirect 301 /jumanji.html /jumanji
-Redirect 301 /simpsons.html /simpsons
+Redirect 301 /jumanji /jumanji.html
+Redirect 301 /simpsons /simpsons.html
 
