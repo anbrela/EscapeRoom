@@ -68,7 +68,7 @@ header {
   width: 100vw;
   overflow: hidden;
   height: 100vh;
-  background-image: url("/img/banner.jpg");
+  background-image: url("/img/banner.jpeg");
   background-position: center;
   background-size: cover;
 }
