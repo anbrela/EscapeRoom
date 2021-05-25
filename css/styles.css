@@ -4,6 +4,10 @@
   --rojo: #ba324f;
 }
 
+a:hover {
+  color: var(--rojo);
+}
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;

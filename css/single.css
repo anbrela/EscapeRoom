@@ -47,6 +47,20 @@ header {
   margin-bottom: 10px;
 }
 
+h1 {
+  font-weight: 900;
+  color: var(--negro);
+}
+.room-info a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--negro);
+}
+
+.room-info a:hover {
+  color: var(--rojo);
+}
+
 .item-rule p {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
