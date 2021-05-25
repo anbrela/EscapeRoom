@@ -19,6 +19,11 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
         $headers = "From: $youremail";
     }
 
+    $myfile = fopen("logs.txt", "a") or die("Unable to open file!");
+
+    fwrite($myfile, "\n" . $body);
+    fclose($myfile);
+
     mail($youremail, 'Mensaje desde la web', $body, $headers);
     var_dump("mensaje enviado:" . $_POST['name']+"sdasd");
 
