@@ -165,11 +165,11 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
 
 <section>
-    <div class="container">
+    <div class="container m-5">
 
-    <div class="row">
+    <div class="row d-flex justify-content-center">
 
-    <div class="col-sm-7 d-flex justify-content-center" ></div>
+    <div class="col-sm-7 " ></div>
     <h2 class="text-uppercase">Gracias por contactar</h2>
 
     </div>
@@ -183,7 +183,7 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
     <div class="row d-flex justify-content-center">
     <div class="col-sm-7">
-   <img src="img/thank-you.jpg" alt="">
+   <img style="width: 80%" src="img/thank-you.jpg" alt="">
 
     </div>
     </div>
