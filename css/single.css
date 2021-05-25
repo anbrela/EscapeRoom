@@ -7,6 +7,12 @@ header {
   background-size: cover;
 }
 
+:root {
+  --negro: #54595f;
+  --amarillo: #fee440;
+  --rojo: #ba324f;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
