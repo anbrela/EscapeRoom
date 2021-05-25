@@ -509,21 +509,26 @@ footer li {
     min-width: 100vw;
     align-items: flex-end;
     right: 0;
-    bottom: 0;
+    bottom: 80px;
     margin: 10px;
   }
 
   .text-header h2 {
-    font-size: 55px;
+    font-size: 45px;
+    text-align: right !important;
+    line-height: 45px;
   }
 
   .text-header span {
-    font-size: 65px;
+    font-size: 60px;
   }
 
   .text-header button {
-    width: 120px;
-    height: 50px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #enlaces {
