@@ -15,7 +15,7 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
     if ($_POST['email'] && !preg_match("/[\r\n]/", $_POST['email'])) {
 /*         $headers = "From: $_POST[email]";
- */$headers = "From: pablonaveiralopez@gmail.com";
+ */$headers = "From: $youremail";
     } else {
         $headers = "From: $youremail";
     }
@@ -26,7 +26,6 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
     fclose($myfile);
 
     mail($youremail, 'Mensaje desde la web', $body, $headers);
-    var_dump("mensaje enviado:" . $_POST['name']+"sdasd");
 
 }
 
