@@ -165,11 +165,11 @@ if (isset($_POST['url']) && $_POST['url'] == '') {
 
 
 <section>
-    <div class="container m-5">
+    <div class="container m-5 d-flex flex-column align-items-center">
 
     <div class="row d-flex justify-content-center">
 
-    <div class="col-sm-7 " ></div>
+    <div class="col-sm-7" ></div>
     <h2 class="text-uppercase">Gracias por contactar</h2>
 
     </div>
