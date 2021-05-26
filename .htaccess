@@ -9,6 +9,8 @@ Redirect 301 /puzzle /index.html
 Redirect 301 /infantil /index.html
 Redirect 301 /contacto /contacto.html
 
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
 
 
 
