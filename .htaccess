@@ -12,9 +12,9 @@ Redirect 301 /puzzle /index.html
 Redirect 301 /infantil /index.html
 Redirect 301 /contacto /contacto.html
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html  [NC,L]
 
 
 
