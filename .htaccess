@@ -3,17 +3,15 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
-
-
-
-Redirect 301 /jumanji /jumanji.html
-Redirect 301 /simpsons /simpsons.html
-Redirect 301 /puzzle /index.html
-Redirect 301 /infantil /index.html
-Redirect 301 /contacto /contacto.html
+Redirect 301 /puzzle /index
+Redirect 301 /infantil /index
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+
+
 
 
 
