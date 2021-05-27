@@ -6,8 +6,6 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-#Redirect 301 /puzzle /index
-#Redirect 301 /infantil /index
 
 
 
