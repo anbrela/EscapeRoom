@@ -7,8 +7,8 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
 
 
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html  [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 
 
