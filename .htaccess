@@ -6,7 +6,7 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
 # remove the index file
 RewriteCond %{THE_REQUEST} ^.*/index
-RewriteRule ^(.*)index$ http://www.example.org/$1 [R=301,L]  
+RewriteRule ^(.*)index$ https://%{SERVER_NAME}/$1 [R=301,L]  
 
 Redirect 301 /puzzle /index
 Redirect 301 /infantil /index
