@@ -8,8 +8,9 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 RewriteCond %{THE_REQUEST} ^.*/index
 RewriteRule ^(.*)index$ https://%{SERVER_NAME}/$1 [R=301,L]  
 
-Redirect 301 /puzzle /index
-Redirect 301 /infantil /index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
