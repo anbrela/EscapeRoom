@@ -7,6 +7,12 @@
     <title>Jumanji - Hype Escape Room Lugo</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async
+      defer
+    ></script>
     <meta
       name="description"
       content="Contacta con Hype Escape Room Lugo, el primer escape room de Lugo que te pondrá a prueba. Tienes 60 minutos para completar la aventura. ¿serás capaz?"
@@ -167,7 +173,7 @@
             reservas puedes hacerlas desde el calendario que hay en cada sala.
           </p>
         </div>
-        <input style="display: none" name="url" />
+        <input type="text" id="url" style="display: none" name="url" />
         <div class="form-group">
           <input
             type="text"
@@ -193,6 +199,9 @@
             placeholder="Déjanos tu mensaje"
           ></textarea>
         </div>
+
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <br />
 
         <button type="submit" class="btn m-2">Enviar</button>
       </form>
