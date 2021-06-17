@@ -173,7 +173,7 @@
             reservas puedes hacerlas desde el calendario que hay en cada sala.
           </p>
         </div>
-        <input type="text" id="url" style="display: none" name="url" />
+        <input class="d-none" type="text" id="url" name="url" />
         <div class="form-group">
           <input
             type="text"
@@ -198,6 +198,10 @@
             rows="3"
             placeholder="Déjanos tu mensaje"
           ></textarea>
+          <div class="d-flex items-center">
+            <span class="m-2">2 + 4</span>
+            <input class="m-2" type="text" id="question" name="question" />
+          </div>
         </div>
 
         <div class="g-recaptcha" data-sitekey="your_site_key"></div>

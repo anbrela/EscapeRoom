@@ -1,7 +1,7 @@
 <?php
 
 // if the url field is empty
-if (isset($_POST['url']) && $_POST['url'] == '') {
+if (isset($_POST['url']) && $_POST['url'] == '' && $_POST['question'] == "6") {
 
     // put your email address here
     $youremail = 'pablonaveiralopez@gmail.com, anne.gurt88@gmail.com';
