@@ -3,7 +3,7 @@
 // if the url field is empty
 if (
 (isset($_POST['url']) && $_POST['url'] == '' ) &&
-(isset($_POST['question']) && $_POST['question'] === "6" || isset($_POST['question']) && strtolower($_POST['question']) === "seis"  )
+(isset($_POST['question']) && $_POST['question'] === "madrid" || isset($_POST['question']) && strtolower($_POST['question']) === "madrid"  )
 
 ) {
 
