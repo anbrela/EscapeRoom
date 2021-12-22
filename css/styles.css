@@ -423,8 +423,7 @@ footer li {
   font-weight: 600;
 }
 
-.link:visited,
-a:visited {
+.link:visited {
   color: var(--negro);
 }
 
