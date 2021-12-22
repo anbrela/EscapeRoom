@@ -408,6 +408,26 @@ footer li {
   list-style: none;
 }
 
+.flex_space_row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--negro);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.link:visited,
+a:visited {
+  color: var(--negro);
+}
+
 .card-text {
   display: flex;
   align-items: center;
