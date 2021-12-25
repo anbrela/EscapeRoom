@@ -3,6 +3,9 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
+RewriteCond %{HTTP_HOST} ^www.escapismolugo.com [NC]
+RewriteRule ^(.*)$ http://escapismolugo.com/$1 [L,R=301]
+
 
 # remove the index file
 RewriteCond %{THE_REQUEST} ^.*/index
